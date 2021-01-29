@@ -30,57 +30,57 @@ public class MedidasVeiculo {
     private Veiculo veiculo;
 
     @Column(name = "porta_direita_largura", scale = 2)
-    private Double portaDireitaX;
+    private Double portaDireitaX = 0.0D;
 
     @Column(name = "porta_direita_altura", scale = 2)
-    private Double portaDireitaY;
+    private Double portaDireitaY = 0.0D;
 
     @Column(name = "porta_esquerda_largura", scale = 2)
-    private Double portaEsquerdaX;
+    private Double portaEsquerdaX = 0.0D;
 
     @Column(name = "porta_esquerda_altura", scale = 2)
-    private Double portaEsquerdaY;
+    private Double portaEsquerdaY = 0.0D;
 
     @Column(name = "lateral_direita_largura", scale = 2)
-    private Double lateralDireitaX;
+    private Double lateralDireitaX = 0.0D;
 
     @Column(name = "lateral_direita_altura", scale = 2)
-    private Double lateralDireitaY;
+    private Double lateralDireitaY = 0.0D;
 
     @Column(name = "lateral_esquerda_largura", scale = 2)
-    private Double lateralEsquerdaX;
+    private Double lateralEsquerdaX = 0.0D;
 
     @Column(name = "lateral_esquerda_altura", scale = 2)
-    private Double lateralEsquerdaY;
+    private Double lateralEsquerdaY = 0.0D;
 
     @Column(name = "testeira_largura", scale = 2)
-    private Double testeiraX;
+    private Double testeiraX = 0.0D;
 
     @Column(name = "testeira_altura", scale = 2)
-    private Double testeiraY;
+    private Double testeiraY = 0.0D;
 
     @Column(name = "traseira_largura", scale = 2)
-    private Double traseiraX;
+    private Double traseiraX = 0.0D;
 
     @Column(name = "traseira_altura", scale = 2)
-    private Double traseiraY;
+    private Double traseiraY = 0.0D;
 
     @Column(name = "frente_largura", scale = 2)
     private Double frenteX;
 
     @Column(name = "frente_altura", scale = 2)
-    private Double frenteY;
+    private Double frenteY = 0.0D;
 
     @Column(name = "capo_largura", scale = 2)
-    private Double capoX;
+    private Double capoX = 0.0D;
 
     @Column(name = "capo_altura", scale = 2)
-    private Double capoY;
+    private Double capoY = 0.0D;
 
     @Column(name = "teto_largura", scale = 2)
-    private Double tetoX;
+    private Double tetoX = 0.0D;
 
     @Column(name = "teto_altura", scale = 2)
-    private Double tetoY;
+    private Double tetoY = 0.0D;
 
 }
