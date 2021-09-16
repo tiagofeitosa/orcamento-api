@@ -1,0 +1,29 @@
+###
+GET http://localhost:8080/orcamento/api/v1/cliente
+
+###
+POST http://localhost:8080/orcamento/api/v1/cliente HTTP/1.1
+content-type: application/json
+
+{
+    "razaoSocial": "Minha empresa",
+    "telefone": "981870363",
+    "ddd": 85,
+    "email": "meuemail@email.com.br",
+    "cpf": "03575317364"
+}
+
+###
+PUT http://localhost:8080/orcamento/api/v1/cliente/1 HTTP/1.1
+content-type: application/json
+
+{
+    "razaoSocial": "Nossa empresa",
+    "telefone": "981870363",
+    "ddd": 85,
+    "email": "meuemail@email.com.br",
+    "cpf": "03575317364"
+}
+
+###
+DELETE http://localhost:8080/orcamento/api/v1/cliente/1 HTTP/1.1

@@ -1,0 +1,45 @@
+###
+GET http://localhost:8080/orcamento/api/v1/veiculo HTTP/1.1
+
+###
+POST http://localhost:8080/orcamento/api/v1/veiculo HTTP/1.1
+content-type: application/json
+
+{
+    "cliente" : {
+        "id": 3,
+        "razaoSocial": "Minha empresa",
+        "telefone": 981870363,
+        "ddd": 85,
+        "email": "meuemail@email.com.br",
+        "cpf": "03575317364",
+        "cnpj": null,
+        "dataCadastro": "27/01/2021"
+    },
+    "nome": "fiat",
+    "modelo": "uno",
+    "placa":"hyx7671"
+}
+
+###
+PUT http://localhost:8080/orcamento/api/v1/veiculo/1 HTTP/1.1
+content-type: application/json
+
+{
+    "cliente" : {
+        "id": 1,
+        "razaoSocial": "Minha empresa",
+        "telefone": 981870363,
+        "ddd": 85,
+        "email": "meuemail@email.com.br",
+        "cpf": "03575317364",
+        "cnpj": null,
+        "dataCadastro": "27/01/2021"
+    },
+    "nome": "fiat",
+    "modelo": "uno_tiago",
+    "placa":"hyx7671"
+}
+
+###
+DELETE http://localhost:8080/orcamento/api/v1/veiculo/1 HTTP/1.1

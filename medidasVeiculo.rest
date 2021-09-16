@@ -1,0 +1,56 @@
+###
+GET http://localhost:8080/orcamento/api/v1/medidasVeiculo HTTP/1.1
+
+###
+POST http://localhost:8080/orcamento/api/v1/medidasVeiculo HTTP/1.1
+content-type: application/json
+
+{
+    "veiculo" : {
+        "id":2,
+        "nome": "fiat",
+        "modelo": "uno",
+        "placa":"hyx7671"
+    },
+    "portaDireitaX" : 0,
+    "portaDireitaY" : 0,
+    "portaEsquerdaX": 0,
+    "portaEsquerdaY": 0,
+    "lateralDireitaX": 0,
+    "lateralDireitaY":0,
+    "lateralEsquerdaX":0,
+    "lateralEsquerdaY":0,
+    "testeiraX":0,
+    "testeiraY":0,
+    "traseiraX":0,
+    "traseiraY":0,
+    "frenteX":0,
+    "frenteY":0,
+    "capoX":0,
+    "capoY":0,
+    "tetoX":0,
+    "tetoY":0
+}
+
+###
+PUT http://localhost:8080/orcamento/api/v1/medidasVeiculo/1 HTTP/1.1
+content-type: application/json
+
+{
+    "cliente" : {
+        "id": 1,
+        "razaoSocial": "Minha empresa",
+        "telefone": 981870363,
+        "ddd": 85,
+        "email": "meuemail@email.com.br",
+        "cpf": "03575317364",
+        "cnpj": null,
+        "dataCadastro": "27/01/2021"
+    },
+    "nome": "fiat",
+    "modelo": "uno_tiago",
+    "placa":"hyx7671"
+}
+
+###
+DELETE http://localhost:8080/orcamento/api/v1/medidasVeiculo/1 HTTP/1.1
